@@ -21,13 +21,13 @@ body img {
 }
 
 .header img {
-  margin-top: 42px;
+  /* margin-top: 42px; */
   width: 60%;
 }
 
-h1  {
+/* h1  {
   margin-bottom: 45px;
-}
+} */
 
 /* h2 {
   margin: 32px 0 20px 0;
@@ -35,8 +35,8 @@ h1  {
 
 p {
   color: #808080;
-  /* margin-bottom: 45px; */
-  /* padding: 10px; */
+  margin-bottom: 36px;
+  padding: 15px;
 }
 
 
@@ -62,12 +62,37 @@ p {
   text-transform: uppercase;
 }
 
-/* .intro {
-  margin-top: 45px;
-} */
-
-
 /* ---- Layout Containers ---- */
+
+.main-container {
+  text-transform: uppercase;
+}
+
+.main-container h2 {
+  padding: 2em 0;
+}
+
+.main-container,
+.container h2 {
+  font-size: 16px;
+}
+
+.container {
+  margin-top: 33px;
+}
+
+.contact {
+  background-color: #f7f7f7;
+  padding: 24px 0;
+}
+
+.contact h2 {
+  text-transform: uppercase;
+}
+
+.contact__item {
+  font-weight: bold;
+}
 
 /* =================================
   Media Queries
