@@ -39,7 +39,6 @@ p {
   padding: 15px;
 }
 
-
 /* =================================
   Base Layout Styles
 ==================================== */
@@ -64,6 +63,9 @@ p {
 
 /* ---- Layout Containers ---- */
 
+.intro {
+  margin-top: 43px;
+}
 .main-container {
   text-transform: uppercase;
 }
@@ -91,8 +93,34 @@ p {
 }
 
 .contact__item {
+  margin-bottom: 15px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.contact__item_bold {
   font-weight: bold;
 }
+
+/* Solid border */
+/* hr.solid {
+  border-top: 3px solid #bbb;
+} */
+
+.footer__nav {
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 1.5em 1em;
+}
+
+.footer__nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 
 /* =================================
   Media Queries
