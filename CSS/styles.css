@@ -15,23 +15,11 @@ body img {
   max-width: 100%;
 }
 
-.header {
+.header,
+footer {
   background-color: #f7f7f7;
   padding: 24px 0;
 }
-
-.header img {
-  /* margin-top: 42px; */
-  width: 60%;
-}
-
-/* h1  {
-  margin-bottom: 45px;
-} */
-
-/* h2 {
-  margin: 32px 0 20px 0;
-} */
 
 p {
   color: #808080;
@@ -39,32 +27,43 @@ p {
   padding: 15px;
 }
 
+div {
+  border: 2px solid blue;
+}
 /* =================================
   Base Layout Styles
 ==================================== */
 
 /* ---- Navigation ---- */
 
-.main-nav {
+.nav__list {
   display: flex;
   flex-direction: column;
+  font-weight: bold;
   list-style: none;
   padding-left: 0;
+  text-transform: uppercase;
 }
 
-.main-nav li {
+.nav__list li {
   background-color: white;
-  font-weight: bold;
-  margin-bottom: .5em;
-  margin-left: 0;
+  margin: .25em 0;
   padding: 1em 0;
-  text-transform: uppercase;
 }
 
 /* ---- Layout Containers ---- */
 
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
 .intro {
   margin-top: 43px;
+}
+
+.intro__img {
+  width: 60%;
 }
 .main-container {
   text-transform: uppercase;
@@ -79,12 +78,12 @@ p {
   font-size: 16px;
 }
 
-.container {
+.box {
   margin-top: 33px;
 }
 
 .contact {
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   padding: 24px 0;
 }
 
@@ -102,9 +101,11 @@ p {
   font-weight: bold;
 }
 
-/* Solid border */
-/* hr.solid {
-  border-top: 3px solid #bbb;
+/* #horizontal-line {
+  width: 200px;
+  height: 1px;
+  background-color: silver;
+
 } */
 
 .footer__nav {
@@ -125,3 +126,20 @@ p {
 /* =================================
   Media Queries
 ==================================== */
+
+@media (min-width:768px){
+  .nav-container{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-container li {
+    background-color: #f7f7f7;
+    margin: 10px 30px;
+  }
+
+  .intro {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
