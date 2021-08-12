@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -18,18 +19,22 @@ body img {
 .header,
 footer {
   background-color: #f7f7f7;
-  padding: 24px 0;
+  /* padding: 24px 0; */
+}
+
+h2 {
+  font-size: 16px;
 }
 
 p {
   color: #808080;
-  margin-bottom: 36px;
-  padding: 15px;
+  /* margin-bottom: 36px; */
+  padding: 0.5em 0;
 }
 
-div {
+/* div {
   border: 2px solid blue;
-}
+} */
 /* =================================
   Base Layout Styles
 ==================================== */
@@ -54,42 +59,44 @@ div {
 /* ---- Layout Containers ---- */
 
 .container {
-  margin: 0 auto;
-  width: 90%;
-}
+  padding: 0 1em;
 
-.intro {
-  margin-top: 43px;
 }
 
 .intro__img {
-  width: 60%;
+  /* margin-top: 43px; */
+  width: 80%;
 }
-.main-container {
+.box__1,
+.box__8 h2 {
+  font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
-.main-container h2 {
+/* .main-container h2 {
   padding: 2em 0;
 }
 
 .main-container,
 .container h2 {
   font-size: 16px;
-}
+} */
 
 .box {
+  font-weight: normal;
   margin-top: 33px;
+  /* padding: 1em 0; */
 }
 
-.contact {
-  /* background-color: #f7f7f7; */
+/* .contact {
+  background-color: #f7f7f7;
   padding: 24px 0;
-}
+} */
 
-.contact h2 {
+/* .contact h2 {
   text-transform: uppercase;
-}
+} */
 
 .contact__item {
   margin-bottom: 15px;
@@ -127,7 +134,14 @@ div {
   Media Queries
 ==================================== */
 
-@media (min-width:768px){
+@media (min-width:769px){
+  .container {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 70%;
+    }
+
+
   .nav-container{
     flex-direction: row;
     justify-content: center;
