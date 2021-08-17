@@ -19,22 +19,27 @@ body img {
 .header,
 footer {
   background-color: #f7f7f7;
-  /* padding: 24px 0; */
+  padding: 24px 0;
+}
+
+h1 {
+  margin-top: 0;
 }
 
 h2 {
-  font-size: 16px;
+  margin: 40px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 400;
 }
 
 p {
   color: #808080;
-  /* margin-bottom: 36px; */
-  padding: 0.5em 0;
 }
 
-/* div {
-  border: 2px solid blue;
-} */
 /* =================================
   Base Layout Styles
 ==================================== */
@@ -59,44 +64,33 @@ p {
 /* ---- Layout Containers ---- */
 
 .container {
-  padding: 0 1em;
+  padding: 0 10px;
 
 }
 
 .intro__img {
-  /* margin-top: 43px; */
   width: 80%;
 }
-.box__1,
-.box__8 h2 {
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-/* .main-container h2 {
-  padding: 2em 0;
-}
-
-.main-container,
-.container h2 {
-  font-size: 16px;
-} */
 
 .box {
   font-weight: normal;
-  margin-top: 33px;
-  /* padding: 1em 0; */
+  margin: 40px 0 50px;
 }
 
-/* .contact {
-  background-color: #f7f7f7;
-  padding: 24px 0;
-} */
+.box img {
+  margin-bottom: 10px;
+}
 
-/* .contact h2 {
+.contact__box {
+  margin-bottom: 50px;
+}
+
+.contact__title{
+  font-size: 14px;
+  font-weight: bold;
+  margin: 20px 0;
   text-transform: uppercase;
-} */
+}
 
 .contact__item {
   margin-bottom: 15px;
@@ -108,22 +102,21 @@ p {
   font-weight: bold;
 }
 
-/* #horizontal-line {
-  width: 200px;
-  height: 1px;
-  background-color: silver;
+.horizontal-line {
+  border-top: 1px solid lightgray;
+  margin: 20px 10px;
+}
 
-} */
-
-.footer__nav {
+.footer__link{
   display: flex;
   font-size: 14px;
   font-weight: bold;
   justify-content: space-between;
-  padding: 1.5em 1em;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
-.footer__nav a {
+.footer__link a {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
