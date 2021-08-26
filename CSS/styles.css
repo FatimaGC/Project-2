@@ -69,6 +69,7 @@ p {
 }
 
 .intro__img {
+  margin-top: 30px;
   width: 80%;
 }
 
@@ -127,26 +128,49 @@ p {
   Media Queries
 ==================================== */
 
-@media (min-width:769px){
+@media (min-width:768px){
   .container {
     margin: 0 auto;
     max-width: 1000px;
-    width: 70%;
+    width: 95%;
     }
 
 
-  .nav-container{
+  .nav__list{
     flex-direction: row;
     justify-content: center;
   }
 
-  .nav-container li {
+  .nav__list li {
     background-color: #f7f7f7;
-    margin: 10px 30px;
+    margin: 0 10px;
   }
 
   .intro {
+    align-items: flex-start;
     display: flex;
-    justify-content: flex-start;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .intro__img {
+    margin: 20px 0;
+    order: 2;
+    width: 290px;
+
+  }
+
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolio__title {
+    flex-basis: 100%;
+  }
+
+  .box {
+    flex: 1 50%;
   }
 }
