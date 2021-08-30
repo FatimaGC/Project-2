@@ -16,13 +16,14 @@ body img {
   max-width: 100%;
 }
 
-.header,
+.main__header,
 footer {
   background-color: #f7f7f7;
-  padding: 24px 0;
+  padding: 24px 10px;
 }
 
 h1 {
+  font-size: 25px;
   margin-top: 0;
 }
 
@@ -65,12 +66,20 @@ p {
 
 .container {
   padding: 0 10px;
+}
 
+.intro {
+  background-color: #f7f7f7;
+  padding: 0 0;
 }
 
 .intro__img {
   margin-top: 30px;
-  width: 80%;
+  width: 65%;
+}
+
+.intro__copy {
+  padding: 0 10px 40px;
 }
 
 .box {
@@ -123,6 +132,10 @@ p {
   text-transform: uppercase;
 }
 
+.footer__nav {
+  display: none;
+}
+
 
 /* =================================
   Media Queries
@@ -133,8 +146,7 @@ p {
     margin: 0 auto;
     max-width: 1000px;
     width: 95%;
-    }
-
+  }
 
   .nav__list{
     flex-direction: row;
@@ -147,17 +159,16 @@ p {
   }
 
   .intro {
-    align-items: flex-start;
     display: flex;
     font-size: 18px;
+    padding: 0 20px 30px;
     text-align: left;
   }
 
   .intro__img {
     margin: 20px 0;
     order: 2;
-    width: 290px;
-
+    width: 40%;
   }
 
   .portfolio {
@@ -171,6 +182,55 @@ p {
   }
 
   .box {
-    flex: 1 50%;
+    flex: 1 45%;
+    margin: 10px;
   }
+
+  .contact__box {
+    font-size: 18px;
+    padding: 0 115px;
+  }
+
+  .footer__link {
+    align-items: center;
+  }
+
+  .footer__link-top {
+    display: none;
+  }
+
+  .footer__nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  .footer__nav li {
+    margin: 0 10px
+  }
+}
+
+@media (min-width:1024px){
+  .main__header{
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 220px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .box {
+    flex: 1 25%;
+    margin: 10px;
+  }
+
+  .contact__box {
+  font-size: 18px;
+  padding: 0 250px;
+  }
+
 }
