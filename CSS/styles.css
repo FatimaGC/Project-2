@@ -41,6 +41,11 @@ p {
   color: #808080;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 /* =================================
   Base Layout Styles
 ==================================== */
@@ -64,10 +69,6 @@ p {
 
 /* ---- Layout Containers ---- */
 
-.container {
-  padding: 0 10px;
-}
-
 .intro {
   background-color: #f7f7f7;
   padding: 0 0;
@@ -80,6 +81,11 @@ p {
 
 .intro__copy {
   padding: 0 10px 40px;
+}
+
+.portfolio {
+  background-color: white;
+  padding: 0 10px;
 }
 
 .box {
@@ -117,17 +123,24 @@ p {
   margin: 20px 10px;
 }
 
-.footer__link{
+.footer__section{
   display: flex;
   font-size: 14px;
   font-weight: bold;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 10px;
   text-decoration: none;
 }
 
-.footer__link a {
+/* .footer__section a {
   color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+} */
+
+.footer__link-to-top {
+  color: black;
+  padding-left: 80px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -142,12 +155,6 @@ p {
 ==================================== */
 
 @media (min-width:768px){
-  .container {
-    margin: 0 auto;
-    max-width: 1000px;
-    width: 95%;
-  }
-
   .nav__list{
     flex-direction: row;
     justify-content: center;
@@ -174,7 +181,10 @@ p {
   .portfolio {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1500px;
     justify-content: center;
+    width: 95%;
   }
 
   .portfolio__title {
@@ -191,11 +201,11 @@ p {
     padding: 0 115px;
   }
 
-  .footer__link {
+  .footer__section {
     align-items: center;
   }
 
-  .footer__link-top {
+  .footer__link-to-top {
     display: none;
   }
 
@@ -211,16 +221,33 @@ p {
 }
 
 @media (min-width:1024px){
+  body {
+    background-color: #f7f7f7;
+  }
+
   .main__header{
-    border: 2px solid blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 220px;
+    padding: 30px 50px;
   }
 
   .name {
     font-size: 30px;
+  }
+
+  .intro {
+    display: flex;
+    font-size: 22px;
+    padding: 0 60px 40px;
+  }
+
+  .intro__img {
+    width: 100%;
+  }
+
+  .intro__copy{
+    padding: 0 250px 0 0;
   }
 
   .box {
@@ -230,7 +257,11 @@ p {
 
   .contact__box {
   font-size: 18px;
-  padding: 0 250px;
+  padding: 0 420px;
+  }
+
+  footer{
+    padding: 30px 30px;
   }
 
 }
