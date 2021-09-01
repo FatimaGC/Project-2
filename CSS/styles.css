@@ -132,15 +132,8 @@ a {
   text-decoration: none;
 }
 
-/* .footer__section a {
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-} */
-
 .footer__link-to-top {
   color: black;
-  padding-left: 80px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -148,7 +141,6 @@ a {
 .footer__nav {
   display: none;
 }
-
 
 /* =================================
   Media Queries
@@ -210,12 +202,17 @@ a {
   }
 
   .footer__nav {
+    display: contents;
+  }
+
+  .footer__nav-list {
     display: flex;
     align-items: center;
     list-style: none;
+    order: 2;
   }
 
-  .footer__nav li {
+  .footer__nav-list li {
     margin: 0 10px
   }
 }
@@ -263,5 +260,4 @@ a {
   footer{
     padding: 30px 30px;
   }
-
 }
